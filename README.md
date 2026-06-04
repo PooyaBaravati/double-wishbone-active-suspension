@@ -1,5 +1,24 @@
 # Double Wishbone Active Suspension Design and Simulation
 
+## Project Preview
+
+### CAD Design and Assembly
+
+<img src="media/Picture1.png" width="800">
+
+### Finite Element Analysis (FEA)
+
+<img src="media/Picture2.png" width="800">
+
+### Simulink Suspension Model
+
+<img src="media/Picture3.png" width="800">
+
+### Simulink Control Architecture
+
+<img src="media/Picture4.png" width="800">
+
+---
 ## Project Overview
 
 This project presents the design, analysis, and simulation of a double wishbone active suspension system. The work combines mechanical design, structural analysis, and dynamic simulation to evaluate suspension performance under road disturbances.
