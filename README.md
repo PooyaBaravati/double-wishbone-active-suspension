@@ -1,20 +1,24 @@
 # Double Wishbone Active Suspension Design and Simulation
 
-This repository presents a double wishbone active suspension project combining **CAD design**, **finite element / mesh-based structural analysis**, and **MATLAB Simulink / Simscape simulation** of suspension response over road disturbances.
-
 ## Project Overview
 
-The project focuses on the development of an electromechanical active suspension concept. It includes a SolidWorks model of a double wishbone suspension assembly, a mesh/stress-analysis workflow, and a Simulink model used to study the suspension behavior in a bumpy-road situation.
+This project presents the design, analysis, and simulation of a double wishbone active suspension system. The work combines mechanical design, structural analysis, and dynamic simulation to evaluate suspension performance under road disturbances.
+
+The project was developed using SolidWorks for CAD modeling, SolidWorks Simulation for finite element analysis (FEA), and MATLAB Simulink/Simscape for dynamic system simulation. The objective was to investigate both the structural integrity of the suspension components and the dynamic response of the system when subjected to uneven road profiles.
+
+---
 
 ## Main Features
 
-- Double wishbone suspension CAD assembly designed in SolidWorks
-- Upper and lower wishbone components, spring, pins, top/base supports, and full assembly
-- STEP export for easier viewing in other CAD software
-- Mesh and stress-analysis workflow for structural evaluation
-- MATLAB Simulink / Simscape suspension model
-- Road bump response simulation for passive/active suspension behavior
-- Project report and presentation included for documentation
+* Complete double wishbone suspension CAD design in SolidWorks
+* Detailed assembly including wishbones, spring, pins, supports, and connectors
+* STEP export for compatibility with different CAD platforms
+* Structural evaluation using finite element analysis (FEA)
+* MATLAB Simulink and Simscape suspension model
+* Road-bump response simulation
+* Technical report and presentation documenting the development process
+
+---
 
 ## Repository Structure
 
@@ -24,67 +28,94 @@ The project focuses on the development of an electromechanical active suspension
 │   ├── solidworks/        # SolidWorks parts and assembly files
 │   └── step/              # Neutral CAD export
 ├── simulation/
-│   └── simulink/          # Simulink model and MATLAB parameters
-├── docs/                  # Report and presentation
-├── media/                 # Images and animation/video
+│   └── simulink/          # Simulink model and MATLAB parameter files
+├── docs/                  # Project report and presentation
+├── media/                 # Images and simulation videos
 ├── .gitignore
 └── README.md
 ```
 
+---
+
 ## CAD Design
 
-The CAD model was created in SolidWorks and includes the main mechanical components of the suspension system:
+The suspension assembly was designed in SolidWorks and includes the primary mechanical components required for a double wishbone suspension configuration:
 
-- Upper wishbone
-- Lower wishbone
-- Upright / knuckle-related parts
-- Spring component
-- Pins and connectors
-- Full assembly
+* Upper wishbone
+* Lower wishbone
+* Spring element
+* Pins and connection components
+* Mounting supports
+* Complete suspension assembly
 
-The `Assem1.STEP` file is included so the model can be opened without SolidWorks in many CAD viewers.
+A STEP version of the assembly is included to allow viewing and inspection without requiring SolidWorks.
 
-## Simulation
+---
 
-The Simulink model studies suspension response to road disturbances. The model includes suspension parameters and is intended to compare body displacement and suspension behavior when the system is exposed to a bump input.
+## Finite Element Analysis (FEA)
+
+Structural evaluation was carried out using SolidWorks Simulation to assess the behavior of suspension components under representative loading conditions.
+
+The analysis included:
+
+* Mesh generation and refinement
+* Application of boundary conditions and constraints
+* Load definition based on suspension operating conditions
+* Stress distribution evaluation
+* Displacement analysis
+* Structural performance assessment
+
+**Note:** Due to file-size limitations and repository optimization, the complete mesh and simulation result files are not included. The repository contains the CAD models, project documentation, and representative analysis outputs necessary to understand the workflow and results.
+
+---
+
+## Dynamic Simulation
+
+A MATLAB Simulink and Simscape model was developed to evaluate the dynamic behavior of the suspension system.
+
+The simulation investigates:
+
+* Vehicle response to road disturbances
+* Suspension displacement
+* Dynamic system behavior over bump inputs
+* Comparison of suspension performance under varying operating conditions
 
 Relevant files:
 
-- `simulation/simulink/suspension_control_4.slx`
-- `simulation/simulink/suspension_parameters.m`
+* `simulation/simulink/suspension_control_4.slx`
+* `simulation/simulink/suspension_parameters.m`
 
-## FEA / Mesh Analysis
-
-The project includes a mesh-based stress-analysis workflow in SolidWorks Simulation. The analysis focuses on checking whether the suspension components can withstand operational loads and road disturbance effects.
-
-Key analysis aspects:
-
-- Mesh refinement of critical regions
-- Boundary conditions and fixtures
-- Loading based on vehicle mass distribution
-- Stress and displacement evaluation
-- Factor of safety considerations
+---
 
 ## Documentation
 
-The `docs/` folder contains:
+The documentation folder contains:
 
-- Full project report
-- Presentation slides
+* Technical project report
+* Presentation slides
 
-These files explain the design concept, active suspension background, CAD development, FEA setup, and Simulink simulation results.
+These documents describe the design methodology, suspension theory, structural analysis approach, simulation setup, and project conclusions.
+
+---
 
 ## Software Used
 
-- SolidWorks
-- SolidWorks Simulation
-- MATLAB
-- Simulink / Simscape
+* SolidWorks
+* SolidWorks Simulation
+* MATLAB
+* Simulink
+* Simscape
+
+---
 
 ## Author
 
-Pooya Zare Baravati
+**Pooya Zare Baravati**
+
+MSc Student in Autonomous Vehicle Engineering
+
+---
 
 ## Notes
 
-This project was developed as an academic mechanical design and simulation project. Binary CAD and simulation files are included for portfolio and review purposes.
+This repository is intended for academic and portfolio purposes. Large simulation databases and detailed FEA result files have been excluded to maintain a lightweight and accessible repository. The included files provide a complete overview of the design, analysis, and simulation workflow used throughout the project.
