@@ -1,0 +1,45 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+._*
+
+# MATLAB / Simulink
+*.asv
+*.m~
+*.slxc
+*.autosave
+slprj/
+*_ert_rtw/
+*_grt_rtw/
+*.mex*
+*.mat
+
+# SolidWorks temporary/backup files
+~$*
+*.bak
+*.sldprt.bak
+*.sldasm.bak
+*.slddrw.bak
+
+# SolidWorks Simulation result/cache files
+*.CWR
+*.LOG
+*.MFC
+*.SLDLOG
+*.out
+*.fld
+*.rlt
+*.hgt
+*.sts
+*.err
+*.tmp
+PerformanceLog.txt
+
+# General build/cache files
+__pycache__/
+*.pyc
+.env
+.venv/
